@@ -1,0 +1,150 @@
+[{
+"sizeInfo":[
+    {
+        "type":"A타입",
+        "typeValue":"A",
+        "room":"원룸",
+        "houseNum":212,
+        "supplySize" :{"m":44.86, "p":13.6},
+        "privateSize":{"m":21.93, "p":6.6}
+    },
+    {
+        "type":"A1타입",
+        "typeValue":"A1",
+        "room":"원룸",
+        "houseNum":14,
+        "supplySize" :{"m":45.93, "p":13.6},
+        "privateSize":{"m":22.45, "p":6.8}
+    },
+    {
+        "type":"B타입",
+        "typeValue":"B",
+        "room":"원룸",
+        "houseNum":1,
+        "supplySize" :{"m":49.56, "p":15.0},
+        "privateSize":{"m":24.23, "p":7.3}
+    },
+    {
+        "type":"B1타입",
+        "typeValue":"B1",
+        "room":"원룸",
+        "houseNum":1,
+        "supplySize" :{"m":51.13, "p":15.5},
+        "privateSize":{"m":25, "p":7.6}
+    },
+    {
+        "type":"B2타입",
+        "typeValue":"B2",
+        "room":"원룸",
+        "houseNum":14,
+        "supplySize" :{"m":49.56, "p":15.0},
+        "privateSize":{"m":24.23, "p":7.3}
+    },
+    {
+        "type":"B3타입",
+        "typeValue":"B3",
+        "room":"원룸",
+        "houseNum":1,
+        "supplySize" :{"m":51.13, "p":15.5},
+        "privateSize":{"m":25, "p":7.6}
+    },
+    {
+        "type":"C타입",
+        "typeValue":"C",
+        "room":"투룸",
+        "houseNum":8,
+        "supplySize" :{"m":93.51, "p":28.3},
+        "privateSize":{"m":45.71, "p":13.9}
+    },
+    {
+        "type":"C1타입",
+        "typeValue":"C1",
+        "room":"투룸",
+        "houseNum":7,
+        "supplySize" :{"m":92.6, "p":28.1},
+        "privateSize":{"m":42.27, "p":13.7}
+    },
+    {
+        "type":"C2타입",
+        "typeValue":"C2",
+        "room":"투룸",
+        "houseNum":1,
+        "supplySize" :{"m":92.54, "p":28.0},
+        "privateSize":{"m":45.24, "p":13.7}
+    },
+    {
+        "type":"D타입",
+        "typeValue":"D",
+        "room":"원룸",
+        "houseNum":75,
+        "supplySize" :{"m":42.67, "p":12.9},
+        "privateSize":{"m":20.86, "p":6.3}
+    },
+    {
+        "type":"D1타입",
+        "typeValue":"D1",
+        "room":"원룸",
+        "houseNum":15,
+        "supplySize" :{"m":42.56, "p":12.9},
+        "privateSize":{"m":20.8, "p":6.3}
+    },
+    {
+        "type":"E타입",
+        "typeValue":"E",
+        "room":"1.5룸",
+        "houseNum":5,
+        "supplySize" :{"m":47.95, "p":14.5},
+        "privateSize":{"m":36.64, "p":11.1}
+    },
+    {
+        "type":"E1타입",
+        "typeValue":"E1",
+        "room":"1.5룸",
+        "houseNum":1,
+        "supplySize" :{"m":79.89, "p":24.2},
+        "privateSize":{"m":39.06, "p":11.8}
+    },
+    {
+        "type":"E2타입",
+        "typeValue":"E2",
+        "room":"1.5룸",
+        "houseNum":1,
+        "supplySize" :{"m":74.64, "p":22.6},
+        "privateSize":{"m":36.49, "p":11.1}
+    },
+    {
+        "type":"E3타입",
+        "typeValue":"E3",
+        "room":"1.5룸",
+        "houseNum":1,
+        "supplySize" :{"m":75.03, "p":22.7},
+        "privateSize":{"m":36.68, "p":11.1}
+    },
+    {
+        "type":"F타입",
+        "typeValue":"F",
+        "room":"1.5룸",
+        "houseNum":1,
+        "supplySize" :{"m":71.4, "p":21.6},
+        "privateSize":{"m":34.9, "p":10.6}
+    },
+    {
+        "type":"F1타입",
+        "typeValue":"F1",
+        "room":"1.5룸",
+        "houseNum":1,
+        "supplySize" :{"m":71.48, "p":21.7},
+        "privateSize":{"m":34.94, "p":10.6}
+    },
+    {
+        "type":"F2타입",
+        "typeValue":"F2",
+        "room":"1.5룸",
+        "houseNum":1,
+        "supplySize" :{"m":71.38, "p":21.6},
+        "privateSize":{"m":34.9, "p":10.6}
+    }
+    
+]
+}]
+

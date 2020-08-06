@@ -1,0 +1,96 @@
+@@include('./include/_head_top.html',{
+    "dot":"."
+})
+
+<div id="container" style="margin-bottom:0;">
+    <div id="contentsCenter">
+        <script type="text/javascript">
+            var val = "";
+            $(function () {
+                /*위치조정*/
+                if (val == "olive") {
+                    var top_height = 2640;
+                    var fn = 0;
+                    var s = jQuery('#wrapper').height() - top_height;
+                    if (fn == 0) {
+                        fn = 1;
+                        jQuery('html,body').animate({
+                            scrollTop: jQuery('#wrapper').height() - s
+                        }, 250, function () { fn = 0; });
+                    }
+                }
+            });
+        </script>
+
+        <div id="title">
+            <h2>오피스형 레지던스 "영종 오션솔레뷰"</h2>
+            <p class="subtitle">바다 앞 영종도 중심에서 누리는 멀티 라이프스타일 오피스텔형 레지던스</p>
+        </div>
+        <!--title 끝-->
+        <div id="main_contents" style="margin-top:-40px;">
+            <div id="navi" style="margin-right:100px;">
+                <img src="http://img.olivehill.co.kr/icon_home.gif" alt="홈">
+                <img src="http://img.olivehill.co.kr/icon_arrow.gif" alt=">">
+                <span>영종오션솔레뷰 소개</span>
+            </div>
+            <!--navi 끝-->
+
+            <!--메인 슬라이더-->
+            @@include('./_main_slider.html')
+            <!--//메인 슬라이더  끝-->
+
+            <!-- 중간 배너 -->
+            <div>
+                <a href="http://hotelairsky.co.kr/" target="_blank">
+                    <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/center_airsky_bn.jpg" alt="중앙배너">
+                </a>
+            </div>
+             <!--//// 중간 배너 -->
+            <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/main_re_02_2.jpg" alt="1호선 온양온천역에서 걸어서 5분거리 최상의 위치의 신개념 소형아파트 올리브힐을 경험하세요.">
+
+            <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/main_d.jpg" alt="단지정보, 인테리어" usemap="#Map">
+            <map name="Map" id="Map">
+                <area shape="rect" coords="777,41,894,72" href="http://www.olivehill.co.kr/home/size/?dd=Whc6RgFH" alt="인테리어 더보러가기">
+            </map>
+            <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/main_4.jpg" alt="세대정보" >
+            <img src="http://img.olivehill.co.kr/main_5.jpg" alt="위치정보">
+            <div>
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                
+                <a href="http://kko.to/TI8gM5tDM" target="_blank">
+                    <div class="map-box">
+                        <!--카카오맵 마우스 이벤트 막기용-->
+                        <div class="event-block"></div>
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1595989388769" class="root_daum_roughmap root_daum_roughmap_landing" ></div>
+                    </div>
+                </a>
+
+                <!--2. 설치 스크립트-->
+                
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1595989388769",
+                        "key" : "2zfv7",
+                        "mapWidth" : "539",
+                        "mapHeight" : "436"
+                    }).render();
+                </script>
+
+                <!-- *///// 카카오맵 - 지도퍼가기 -->
+                <div id="right_img" style="float:left">
+                    <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/main_6.jpg" alt="주소">
+                </div>
+
+            </div>
+        </div>
+        <!--main_contents 끝-->
+    </div>
+    <!--contentsCenter 끝-->
+</div>
+
+@@include('./include/_bottom.html',{
+    "dot":"."
+})

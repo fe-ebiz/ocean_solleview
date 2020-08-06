@@ -1,0 +1,5 @@
+@@for (var i = 0; i < sizeInfo.length; i++) {
+    <input type="checkbox" name="apt[]" value="`+sizeInfo[i].typeValue+`" id="`+sizeInfo[i].typeValue+`"> 
+    <label for="`+sizeInfo[i].typeValue+`"><b>`+sizeInfo[i].typeValue+`</b>(전용면적 `+sizeInfo[i].privateSize.m+`㎡)</label>
+    <br>
+}

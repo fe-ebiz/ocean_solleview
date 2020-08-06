@@ -1,0 +1,21 @@
+<table summary="분양임대" width="100%" cellpadding="0" cellspacing="0" id="size_t">
+    <tbody>
+        <tr>
+            <th rowspan="2" style="border-bottom:1px solid #000">타입</th>
+            <th colspan="2">공급면적</th>
+            <th colspan="2">전용면적</th>
+            <!-- <th rowspan="2" style="border-bottom:1px solid #000;">매매가</th> -->
+            <th rowspan="2" style="border-bottom:1px solid #000">보증금</th>
+            <th rowspan="2" style="border-bottom:1px solid #000">월임차료</th>
+        </tr>
+        <tr>
+            <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">㎡</td>
+            <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">평형</td>
+            <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">㎡</td>
+            <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">평형</td>
+        </tr>
+
+        @@loop('./_size_temp_m/_size_temp_m.html','../_info_json/_info_size.json')
+        
+    </tbody>
+</table>

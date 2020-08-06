@@ -1,0 +1,35 @@
+html,body{
+    overflow: hidden;
+    height: 100%;
+}
+
+.wrapper, .container{
+    width: 100%;
+    height: 100%;
+}
+
+.fullpage-area{
+    position: relative;
+    height: 100%;
+    section{
+        height: 100%;
+    }
+    .sec01{
+        background-color: #804521;
+    }
+    .sec02{
+        background-color: #408052;
+    }
+    .sec03{
+        background-color: #304abb;
+    }
+    .sec04{
+        background-color: #852142;
+    }
+    .sec-last{
+        height: 280px;
+        background-color: #1c99aa;
+    }
+}
+
+

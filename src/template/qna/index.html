@@ -1,0 +1,121 @@
+@@include('../include/_head_top.html',{
+"dot":".."
+})
+
+
+<div id="container" style="margin-bottom:0;">
+    <div id="contentsCenter">
+        <div id="title">
+            <h2>장/단기 임대문의</h2>
+            <p class="subtitle">바다 앞 영종도 중심에서 누리는 멀티 라이프스타일 오피스텔형 레지던스</p>
+        </div>
+        <!--title 끝-->
+        <div id="main_contents" style="margin-top:-40px;">
+            <div id="navi">
+                <img src="http://img.olivehill.co.kr/icon_home.gif" alt="홈"><img
+                    src="http://img.olivehill.co.kr/icon_arrow.gif" alt=">">임대문의
+            </div>
+            <!--navi 끝-->
+
+
+            <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/qna_bn_1.jpg" alt="분양상담문의배너">
+
+            <!-- 중간 배너 -->
+            <div style="width:900px; margin:0px auto; text-align:center; padding-top:20px;">
+                <a href="http://hotelairsky.co.kr/" target="_blank">
+                    <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/center_airsky_bn.jpg" alt="중앙배너">
+                </a>
+            </div> <!-- 중간 배너 -->
+
+            <form name="iform" id="iform" action="state.php" method="post">
+                <input type="hidden" name="pid" value="home">
+                <input type="hidden" name="mode" value="apply">
+                <input type="hidden" name="info" value="web">
+                <!--임대문의 게시판 시작-->
+                <table summary="임대문의" cellpadding="0" cellspacing="0" id="board_reserve">
+                    <colgroup>
+                        <col width="107">
+                        <col width="790">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>평형</th>
+                            <td class="apt_width">
+                                <p class="size-check-box">
+
+                                    <!-- @loop('./_size_check_temp/_size_check_temp.html','../_info_json/_info_size.json') -->
+                                    <input type="checkbox" name="apt[]" value="원룸" id="room-one"> 
+                                    <label for="room-onw"><b>원룸</b></label>
+                                    <input type="checkbox" name="apt[]" value="원룸" id="room-one"> 
+                                    <label for="room-onw"><b>투룸</b></label>
+                                    <input type="checkbox" name="apt[]" value="원룸" id="room-one"> 
+                                    <label for="room-onw"><b>1.5룸</b></label>
+
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>가격</th>
+                            <td>
+                                <input type="text" name="price" id="price" size="25" class="email" validation="yes"
+                                    title="가격">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>상담내용</th>
+                            <td style="padding: 17px;">
+                                <textarea name="memo" id="memo" class="not_focus" validation="yes"
+                                    style="width: 690px; height: 150px; border: solid 1px #c5c5c5;"
+                                    title="상담내용">※ 원하시는 상담시간과 입주가능일을 함께 남겨주시면 빠른 상담가능합니다.</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>* 성명</th>
+                            <td><input type="text" name="name" id="name" size="25" class="name"
+                                    style="ime-mode: active;" validation="yes" title="성명"></td>
+                        </tr>
+                        <tr>
+                            <th>* 연락처</th>
+                            <td>
+                                <input type="text" name="tel1" id="tel1" size="6" class="mobile" maxlength="3"
+                                    onkeyup="util.checktype('number', 'tel1'); util.checknum('tel1', 'tel2', 2);"
+                                    validation="yes" title="연락처"> -
+                                <input type="text" name="tel2" id="tel2" size="6" class="mobile" maxlength="4"
+                                    onkeyup="util.checktype('number', 'tel2'); util.checknum('tel2', 'tel3', 3);"
+                                    validation="yes" title="연락처"> -
+                                <input type="text" name="tel3" id="tel3" size="6" class="mobile" maxlength="4"
+                                    onkeyup="util.checktype('number', 'tel3'); util.checknum('tel3', 'email1', 3);"
+                                    validation="yes" title="연락처">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <input type="text" name="email1" id="email1" size="25" class="email"
+                                    onkeyup="util.checktype('email1', 'email1');" style="ime-mode: disabled;"
+                                    validation="yes" title="이메일"> @
+                                <input type="text" name="email2" id="email2" size="25" class="email"
+                                    onkeyup="util.checktype('email2', 'email2');" style="ime-mode: disabled;"
+                                    validation="yes" title="이메일"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td colspan="2" class="reserve_email">* 이메일 문의시 help@olivehill.co.kr 로 메일 보내주시기 바랍니다.</td> -->
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="reserve_button"><input type="button" value="등록" class="regist"
+                            onclick="util.inst_fchk('iform');"> <input type="button" value="취소" class="cancel"
+                            onclick="location.href='../qna/index.html';"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--임대문의 게시판 끝-->
+            </form>
+        </div>
+        <!--main_contents 끝-->
+    </div>
+    <!--contentsCenter 끝-->
+</div>
+
+@@include('../include/_bottom.html',{
+    "dot":".."
+})

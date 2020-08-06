@@ -1,0 +1,41 @@
+@@for (var i = 0; i < 1; i++) {
+<!-- @@sizeFirst.type 시작 --->
+<tr>
+    <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">`+sizeInfo[i].type+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].supplySize.m+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].supplySize.p+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].privateSize.m+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].privateSize.p+`</td>
+    <td colspan="2" rowspan="22" style="background-color:#fff; ">
+        <p style="font-weight:bold; text-align:center">전세,반전세,월세,<br> 모두 가능!</p>
+        <p style="font-weight:bold; text-align:center; color:#ee0f0f; font-size:14px; margin-top:10px">
+            <a href="tel:01086171634" style="color:#ee0f0f">요금문의<br>T.010)8817-1643</a></p>
+    </td>
+</tr>
+
+}
+
+
+
+@@for (var i = 1; i < sizeInfo.length; i++) {
+<!-- `+sizeInfo[i].type+` 시작 --->
+<tr>
+    <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">`+sizeInfo[i].type+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].supplySize.m+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].supplySize.p+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].privateSize.m+`</td>
+    <td style="border-bottom:1px solid #000">`+sizeInfo[i].privateSize.p+`</td>
+</tr>
+}
+
+<!-- A' / 12 시작 --->
+<!-- <tr>
+    <td style=" font-weight:600; background-color:#f6f6f6; border-bottom:1px solid #000">@@type</td>
+    <td style="border-bottom:1px solid #000">@@room</td>
+    <td style="border-bottom:1px solid #000">@@houseNum</td>
+    <td style="border-bottom:1px solid #000">@@supplySize.m</td>
+    <td style="border-bottom:1px solid #000">@@supplySize.p</td>
+    <td style="border-bottom:1px solid #000">@@privateSize.m</td>
+    <td style="border-bottom:1px solid #000">@@privateSize.p</td>
+</tr> -->
+

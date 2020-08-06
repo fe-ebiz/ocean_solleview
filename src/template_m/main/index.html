@@ -1,0 +1,98 @@
+
+@@include('../include/_head_top.html',{
+    "dot":".."
+})
+<script>
+$(document).ready(function(){
+    $("#smenu1").addClass("over");
+});
+</script>
+
+<div id="wrap">
+    <div id="contents">
+        <h2>영종도 오션솔레뷰 소개</h2>
+        <h4>바다 앞 영종도중심에서 누리는<br><span>멀티라이프스타일
+            오피스텔형 레지던스</span></h4>
+        <img src="http://img.olivehill.co.kr/m/line.png" class="line"><br>
+
+
+        <table id="photo_t" cellpadding="0" cellspacing="0">
+            <colgroup>
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+                <col width="15%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td colspan="4">
+                        <div id="jwSlide_m_view"><img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_1_1.jpg" id="img_view">
+                        </div>
+                    </td>
+                </tr>
+                <input type="hidden" name="galleryCount" id="galleryCount" value="4">
+                <tr>
+                    <td class="mini"><a
+                            href="javascript:m_slide.view(1, 'http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_1_1.jpg');"><img
+                                src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_1_1.jpg" id="img_navi_1"></a></td>
+                    <td class="mini"><a
+                            href="javascript:m_slide.view(2, 'http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_2_1.jpg');"><img
+                                src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_2_1.jpg" id="img_navi_2"></a></td>
+                    <td class="mini"><a
+                            href="javascript:m_slide.view(3, 'http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_3_1.jpg');"><img
+                                src="http://img.olivehill.co.kr/m/main_3_1.jpg" id="img_navi_3"></a></td>
+                    <td class="mini"><a
+                            href="javascript:m_slide.view(4, 'http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/mmain_4_1.jpg');"><img
+                                src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_4_1.jpg" id="img_navi_4"></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/intro_re_01_1_2.png" alt="아산올리브힐 소개">
+
+
+        <img src="http://img.olivehill.co.kr/m/line.png" class="line">
+        <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_md.jpg" alt="단지정보"><br>
+        <br>
+        <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/main_m4.jpg" alt="세대정보"><br>
+
+
+
+        <a href="../size/index.html"><img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/intro_02.png" alt="인테리어"></a>
+        <img src="http://img.olivehill.co.kr/m/line.png" class="line"><br>
+
+        <img src="http://img.olivehill.co.kr/m/intro_03.png" alt="위치정보">
+        <h4>내비게이션 이용시 아래 주소를 입력해 주세요.<br>
+            <span>인천시 중구 영종진광장로 32
+                [지번]중산동 1947-1</span></h4>
+                <br>
+        <div >
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <div class="map-box">
+                <!--카카오맵 마우스 이벤트 막기용-->
+                <div class="event-block"></div>
+                <!-- 1. 지도 노드 -->
+                <div style="width: 100%;" id="daumRoughmapContainer1595989388769" class="root_daum_roughmap root_daum_roughmap_landing" ></div>
+            </div>
+            
+
+            <!--2. 설치 스크립트-->
+            
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+                new daum.roughmap.Lander({
+                    "timestamp" : "1595989388769",
+                    "key" : "2zfv7",
+                    "mapHeight" : "320"
+                }).render();
+            </script>
+
+            <!-- *///// 카카오맵 - 지도퍼가기 -->
+
+        </div>
+    </div>
+</div>
+
+@@include('../include/_bottom.html',{
+"dot":".."
+})

@@ -1,0 +1,51 @@
+#header{
+    background: url(http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/top_menu_bg.gif) 0 90px repeat-x;;
+}
+
+.top-banner{
+    float: right;
+}
+
+#title h2 {
+    color: #414141;
+}
+
+#gnb li {
+    margin-right: 42px;
+}
+
+.map-box{
+    float:left;
+	overflow:hidden;
+	height:436px;
+	position:relative;
+	
+    .event-block{
+        position: absolute; 
+        top:0; left:0; 
+        width: 540px; 
+        height: 436px; 
+        z-index: 10;
+    }
+}
+
+.room-ment{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.size-check-box{
+    label{
+        display: inline-block;
+        width: 40px;
+    }
+}
+
+#board_reserve .regist{
+    background: url(http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/btn_regist.gif) 0 0 no-repeat;
+}
+
+#footer{
+    height: 250px;
+    margin-top: 80px;
+}

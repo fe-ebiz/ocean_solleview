@@ -1,0 +1,106 @@
+@@include('../include/_head_top.html',{
+"dot":".."
+})
+<script>
+    $(document).ready(function () {
+        $("#smenu4").addClass("over");
+    });
+</script>
+
+<div id="wrap">
+    <div id="contents">
+
+        <h2>오션솔레뷰 임대문의</h2>
+        <h4>바다 앞 영종도중심에서 누리는<br><span>멀티라이프스타일
+            오피스텔형 레지던스</span></h4>
+        <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/qna_bn_1.jpg" alt="임대문의배너">
+
+        <form name="iform" id="iform" action="state.php" method="post">
+            <input type="hidden" name="pid" value="home">
+            <input type="hidden" name="mode" value="apply">
+            <input type="hidden" name="info" value="mobile">
+            <table summary="분양문의" cellpadding="0" cellspacing="0" id="qna_t">
+                <colgroup>
+                    <col width="20%">
+                    <col width="80%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>평형</th>
+                        <td class="apt_width">
+                            <p>
+                                <!-- @loop('./_size_check_temp_m/_size_check_temp_m.html','../_info_json/_info_size.json') -->
+                                <input type="checkbox" name="apt[]" value="원룸" id="room-one"> 
+                                <label for="room-onw"><b>원룸</b></label><br>
+                                <input type="checkbox" name="apt[]" value="원룸" id="room-one"> 
+                                <label for="room-onw"><b>투룸</b></label><br>
+                                <input type="checkbox" name="apt[]" value="원룸" id="room-one"> 
+                                <label for="room-onw"><b>1.5룸</b></label><br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>가격</th>
+                        <td>
+                            <input type="text" name="price" id="price" size="25" class="email" validation="yes"title="가격">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>상담내용</th>
+                        <td>
+                            <textarea name="memo" id="memo" class="not_focus" validation="yes"
+                                style="width: 100%; height: 150px; border: solid 1px #c5c5c5;">※ 원하시는 상담시간과 입주가능일을 함께 남겨주시면 빠른 상담가능합니다.</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>성명</th>
+                        <td><input type="text" name="name" id="name" size="25" class="name" style="ime-mode: active;"
+                                validation="yes" title="성명"></td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td>
+                            <input type="text" name="tel1" id="tel1" size="6" class="mobile" maxlength="3"
+                                onkeyup="util.checktype('number', 'tel1'); util.checknum('tel1', 'tel2', 2);"
+                                validation="yes" title="연락처"> -
+                            <input type="text" name="tel2" id="tel2" size="6" class="mobile" maxlength="4"
+                                onkeyup="util.checktype('number', 'tel2'); util.checknum('tel2', 'tel3', 3);"
+                                validation="yes" title="연락처"> -
+                            <input type="text" name="tel3" id="tel3" size="6" class="mobile" maxlength="4"
+                                onkeyup="util.checktype('number', 'tel3'); util.checknum('tel3', 'email1', 3);"
+                                validation="yes" title="연락처">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <input type="text" name="email1" id="email1" size="25" class="email"
+                                onkeyup="util.checktype('email1', 'email1');" style="ime-mode: disabled;"
+                                validation="yes" title="이메일"> @
+                            <input type="text" name="email2" id="email2" size="25" class="email"
+                                onkeyup="util.checktype('email2', 'email2');" style="ime-mode: disabled;"
+                                validation="yes" title="이메일">
+                            <br>
+                            <br>
+                            <!-- <p>* 이메일 문의시 help@olivehill.co.kr 로 메일 보내주시기 바랍니다.</p> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <div id="btn">
+            <a href="../qna/index.html">
+                <img src="http://img.olivehill.co.kr/m/btn_cancel.gif" alt="취소">
+            </a>
+            <a href="javascript:util.inst_fchk('iform');">
+                <img src="http://design.ebiznetworks.co.kr/lhc/OceanSolleview.co.kr/img/m/btn_regist.gif" alt="등록" style="margin-left:5px">
+            </a>
+        </div>
+    </div>
+
+</div>
+
+@@include('../include/_bottom.html',{
+"dot":".."
+})

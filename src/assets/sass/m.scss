@@ -1,0 +1,42 @@
+#sub_menu {
+    background-color: #0360c6;
+}
+
+#contents{
+    h2 {
+        color: #0360c6;
+    }
+    h4{
+        span{
+            color: #0360c6;
+        }
+
+    }
+} 
+
+.map-box{
+    position:relative;
+    overflow: hidden;
+    height: 320px;
+    .event-block{
+        position: absolute; 
+        top:0; left:0; 
+        width: 100%;
+        height: 100%; 
+        z-index: 10;
+    }
+}
+
+
+#footer{
+    .tel{
+        background-color: #0360c6;
+    }
+    .copyrigth{
+         word-break: keep-all;
+    }
+    span{
+        color: #0360c6;
+    } 
+    
+}
